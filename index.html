@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Kultprosvet</title>
+	<link rel="stylesheet" href="css/style.css">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+</head>
+<body>
+	<div class="centering">
+		<header class="main-header">
+			<nav class="top-menu">
+				<ul>
+					<li>
+						<a href="#">
+						Путешествия
+						</a>
+						<ul class="submenu">
+							<li>
+								<ul class="submenu-item">
+									<li><a href="#">Турция</a></li>
+									<li class="active"><a href="#">Египет</a></li>
+									<li><a href="#">ОАЭ</a></li>
+									<li><a href="#">Греция</a></li>
+									<li><a href="#">Тунис</a></li>
+									<li><a href="#">Черногория</a></li>
+									<li><a href="#">Хорватия</a></li>
+									<li><a href="#">Болгария</a></li>
+									<li><a href="#">Кипр</a></li>
+									<li><a href="#">Испания</a></li>
+								</ul>
+								<ul class="submenu-item">
+									<li><a href="#">Венгрия</a></li>
+									<li><a href="#">Чехия</a></li>
+									<li><a href="#">Польша</a></li>
+									<li><a href="#">Германия</a></li>
+									<li><a href="#">Франция</a></li>
+									<li><a href="#">Италия</a></li>
+									<li><a href="#">Испания</a></li>
+								</ul>
+								<ul class="submenu-item">
+									<li><a href="#">Карпаты</a></li>
+									<li><a href="#">Словакия</a></li>
+									<li><a href="#">Турция</a></li>
+									<li><a href="#">Франция</a></li>
+									<li><a href="#">Швейцария</a></li>
+								</ul>
+								<ul class="submenu-item">
+									<li><a href="#">Венгрия</a></li>
+									<li><a href="#">Чехия</a></li>
+									<li><a href="#">Польша</a></li>
+									<li><a href="#">Германия</a></li>
+									<li><a href="#">Франция</a></li>
+									<li><a href="#">Италия</a></li>
+									<li><a href="#">Испания</a></li>
+								</ul>
+								<ul class="submenu-item">
+									<li><a href="#">Карибский бассейн</a></li>
+									<li><a href="#">Острова индийского океана</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="active"><a href="#">Акционные туры</a></li>
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">О нас</a></li>
+				</ul>
+			</nav>
+			<a href="#" class="btn btn-primary">РасчитатьТур</a>
+		</header>
+		<main>
+			<section class="tour-info">
+				<div class="promo">
+					<img src="img/country-image-001.jpg" alt="Country image">
+					<div class="current-price">
+						<div class="wrap">
+							от <i>$</i> <span class="price">450</span> <span class="counts">7 ночей 2 чел.</span>
+						</div>
+					</div>
+				</div>
+				<div class="main-info">
+					<h1 class="title">Египет</h1>
+					<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porta magna at elit dignissim ut egestas nulla condimentum. Cras nec neque sed odio mattis eleifend at a arcu. Mauris feugiat massa vestibulum enim placerat iaculis. Vivamus iaculis metus ac augue facilisis eu rhoncus enim lacinia.</p>
+					<table class="price-variants">
+						<tr>
+							<th class="heading">В Египет из:</th>
+							<th></th>
+						</tr>
+						<tr>
+							<td class="location">Днепропетровска</td>
+							<td class="price"><span>от <i>$</i></span>450</td>
+						</tr>
+						<tr>
+							<td class="location">Киева</td>
+							<td class="price"><span>от <i>$</i></span>500</td>
+						</tr>
+						<tr>
+							<td class="location">Запорожья</td>
+							<td class="price"><span>от <i>$</i></span>540</td>
+						</tr>
+					</table>
+				</div>
+			</section> <!-- /tour-info -->
+			<section class="filters">
+				<div class="col">
+					<h2 class="heading">Лучшие <br> предложения</h2>
+				</div>
+				<form>
+					<div class="col">
+						<label for="location-from">Город вылета:</label> <br>
+						<select name="location-from" id="location-from">
+							<option value="Dnipropetrovsk">Днепропетровск</option>
+							<option value="Kiev">Киев</option>
+							<option value="Zaporozhye">Запорожье</option>
+						</select>
+					</div>
+					<div class="col">
+						<label for="location-to">Город прилета:</label> <br>
+						<select name="location-to" id="location-to">
+							<option value="Sharm-El-Sheikh">Шарм-Эль-Шейх</option>
+							<option value="Hurghada">Хургада</option>
+						</select>
+					</div>
+					<div class="col">
+						<label for="hotel-type">Тип отеля:</label> <br>
+						<select name="hotel-type" id="hotel-type">
+							<option value="whatever">любой</option>
+							<option value="business">Бизнес</option>
+							<option value="spa">Спа</option>
+							<option value="guesthouse">Гестхаус</option>
+						</select>
+					</div>
+					<div class="col">
+						<label for="entry-date">Дата въезда:</label> <br>
+						<select name="entry-date" id="entry-date">
+							<option value="5">5</option>
+							<option value="4">4</option>
+							<option value="3">3</option>
+							<option value="2">2</option>
+							<option value="1">1</option>
+						</select>
+						<input type="checkbox" name="entry-date-variation" id="entry-date-variation">
+						<label for="entry-date-variation">+/- 3 дня</label>
+					</div>
+					<div class="col">
+						<label for="nights-count">Кол-во ночей:</label> <br>
+						<select name="nights-count" id="nights-count">
+							<option value="max">7-10</option>
+							<option value="mid">3-7</option>
+							<option value="min">1-5</option>
+						</select>
+					</div>
+					<div class="col">
+						<label for="human-count">Кол-во человек:</label> <br>
+						<select name="human-count" id="human-count">
+							<option value="two-adults">2 взрослых</option>
+							<option value="three-adults">3 взрослых</option>
+							<option value="four-adults">4 взрослых</option>
+						</select>
+					</div>
+					<button class="btn-filter">Показать</button>
+				</form>
+			</section> <!-- /filters -->
+			<div class="hotels-info">
+				<table class="hotels-list">
+					<tr>
+						<td><span class="index">1</span> El Samaka Desert Inn <i>3*</i> <span class="location-to">&#47;Хургада</span></td>
+						<td>Днепропетровск <span>&#47; город вылета</span></td>
+						<td>06.06 - 12.06 <span>&#47; 7 ночей</span></td>
+						<td>2 взр. <span class="price"><i>$</i>560</span> <a href="#">Подробнее</a></td>
+					</tr>
+					<tr>
+						<td><span class="index">2</span> El Samaka Desert Inn <i>3*</i> <span class="location-to">&#47;Шарм-Эль-Шейх</span></td>
+						<td>Днепропетровск <span>&#47; город вылета</span></td>
+						<td>06.06 - 12.06 <span>&#47; 7 ночей</span></td>
+						<td>2 взр. <span class="price"><i>$</i>585</span> <a href="#">Подробнее</a></td>
+					</tr>
+					<tr>
+						<td><span class="index">3</span> El Samaka Desert Inn <i>3*</i> <span class="location-to">&#47;Хургада</span></td>
+						<td>Днепропетровск <span>&#47; город вылета</span></td>
+						<td>06.06 - 12.06 <span>&#47; 11 ночей</span></td>
+						<td>2 взр. <span class="price"><i>$</i>610</span> <a href="#">Подробнее</a></td>
+					</tr>
+					<tr>
+						<td><span class="index">4</span> El Samaka Desert Inn <i>3*</i> <span class="location-to">&#47;Хургада</span></td>
+						<td>Днепропетровск <span>&#47; город вылета</span></td>
+						<td>06.06 - 12.06 <span>&#47; 7 ночей</span></td>
+						<td>2 взр. <span class="price"><i>$</i>870</span> <a href="#">Подробнее</a></td>
+					</tr>
+					<tr>
+						<td><span class="index">5</span> El Samaka Desert Inn <i>3*</i> <span class="location-to">&#47;Шарм-Эль-Шейх</span></td>
+						<td>Днепропетровск <span>&#47; город вылета</span></td>
+						<td>06.06 - 12.06 <span>&#47; 9 ночей</span></td>
+						<td>2 взр. <span class="price"><i>$</i>1260</span> <a href="#">Подробнее</a></td>
+					</tr>
+					<tr>
+						<td><span class="index">34</span> El Samaka Desert Inn <i>3*</i> <span class="location-to">&#47;Шарм-Эль-Шейх</span></td>
+						<td>Днепропетровск <span>&#47; город вылета</span></td>
+						<td>06.06 - 12.06 <span>&#47; 7 ночей</span></td>
+						<td>2 взр. <span class="price"><i>$</i>1378</span> <a href="#">Подробнее</a></td>
+					</tr>
+				</table>
+			</div> <!-- /hotels-info -->
+		</main>
+		<footer class="main-footer">
+			<span class="copyright">© ООО Элит-тур 2012</span>
+			<span><a href="mailto:info@elite-tour.com.ua">info@elite-tour.com.ua</a></span>
+			<span><a href="tel:+380563346587">(056) 334 65 87</a></span>
+			<span class="dev">Разработка сайта - <a href="#">Webstudio</a></span>
+			<a href="#" class="btn btn-primary">РасчитатьТур</a>
+		</footer>
+	</div>
+</body>
+</html>

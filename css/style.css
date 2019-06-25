@@ -1,0 +1,403 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+body {
+  font-family: 'Calibri', sans-serif;
+  color: #424242;
+  font-size: 14px; }
+
+.centering {
+  width: 1000px;
+  margin: auto; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.btn {
+  padding: 5px 15px;
+  background-color: #ea3618;
+  background-image: -webkit-linear-gradient(top, #e11f0e, #f24921);
+  background-image: linear-gradient(to bottom, #e11f0e, #f24921);
+  border-radius: 2px;
+  border: solid 1px #d43015;
+  border-top: 1px solid #e47f6e;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.23), inset 0 -1px 1px rgba(255, 255, 255, 0.5);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.25);
+  font-weight: bold;
+  color: #fefefe; }
+
+.btn-primary {
+  font-size: 14px;
+  position: absolute;
+  top: 6px;
+  right: 7px; }
+
+.main-header {
+  position: relative;
+  margin-top: 10px;
+  background-color: #f4f4f4;
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.09), rgba(255, 255, 255, 0.09));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.09), rgba(255, 255, 255, 0.09));
+  border-radius: 3px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4), inset 0 1px 1px rgba(0, 0, 0, 0.03), inset 0 0 2px rgba(255, 255, 190, 0.3); }
+  .main-header .top-menu > ul > li {
+    position: relative;
+    display: inline-block;
+    line-height: 38px; }
+    .main-header .top-menu > ul > li:hover:not(.active) {
+      background-color: #525252;
+      background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.07), rgba(219, 219, 219, 0.07));
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.07), rgba(219, 219, 219, 0.07));
+      box-shadow: 0 1px rgba(0, 0, 0, 0.75), inset 0 1px 1px rgba(0, 0, 0, 0.02);
+      text-shadow: 0 -1px rgba(0, 0, 0, 0.36);
+      color: #fff; }
+    .main-header .top-menu > ul > li:first-child:hover {
+      border-radius: 3px 0 0 3px; }
+    .main-header .top-menu > ul > li:hover .submenu {
+      left: 0;
+      opacity: 1;
+      text-shadow: none; }
+    .main-header .top-menu > ul > li > a {
+      display: block;
+      padding: 0 15px 0 20px; }
+    .main-header .top-menu > ul > li .submenu {
+      position: absolute;
+      left: -9999px;
+      z-index: 99;
+      padding-bottom: 20px;
+      min-width: 670px;
+      background: #494949;
+      border-radius: 0 0 3px 3px;
+      opacity: 0;
+      -webkit-transition: opacity .25s;
+              transition: opacity .25s; }
+      .main-header .top-menu > ul > li .submenu .submenu-item {
+        float: left;
+        box-sizing: border-box;
+        padding: 0 10px;
+        margin-top: 25px;
+        width: 20%;
+        border-right: 1px solid #383838;
+        color: #fff;
+        line-height: 1.5em;
+        text-align: center; }
+        .main-header .top-menu > ul > li .submenu .submenu-item:before {
+          content: '';
+          display: inline-block;
+          background: url(../img/sprites.png) no-repeat;
+          width: 95px;
+          height: 60px; }
+        .main-header .top-menu > ul > li .submenu .submenu-item:nth-child(1):before {
+          background-position: -15px -148px; }
+        .main-header .top-menu > ul > li .submenu .submenu-item:nth-child(2):before {
+          background-position: -111px -148px; }
+        .main-header .top-menu > ul > li .submenu .submenu-item:nth-child(3):before {
+          background-position: -207px -148px; }
+        .main-header .top-menu > ul > li .submenu .submenu-item:nth-child(4):before {
+          background-position: -303px -148px; }
+        .main-header .top-menu > ul > li .submenu .submenu-item:nth-child(5):before {
+          background-position: -399px -148px; }
+        .main-header .top-menu > ul > li .submenu .submenu-item li:first-child {
+          margin-top: 10px; }
+        .main-header .top-menu > ul > li .submenu .submenu-item .active {
+          color: #e34424; }
+        .main-header .top-menu > ul > li .submenu .submenu-item a:hover {
+          text-decoration: underline; }
+  .main-header .top-menu > ul > .active:after {
+    content: '';
+    background: url(../img/sprites.png) 0 -148px no-repeat;
+    width: 14px;
+    height: 29px;
+    position: absolute;
+    z-index: 100;
+    bottom: -25px;
+    left: 50%;
+    margin-left: -7px; }
+
+.tour-info {
+  position: relative;
+  padding-top: 45px; }
+  .tour-info:after {
+    content: '';
+    display: block;
+    clear: both; }
+  .tour-info .promo {
+    margin-top: 6px;
+    float: left;
+    width: 66.8%; }
+    .tour-info .promo img {
+      width: 100%;
+      height: 100%;
+      border-radius: 3px 0 0 3px; }
+    .tour-info .promo .current-price .wrap {
+      position: absolute;
+      left: 20px;
+      bottom: 20px;
+      font-size: 12px;
+      color: #fff;
+      text-shadow: 0 -1px rgba(0, 0, 0, 0.25); }
+      .tour-info .promo .current-price .wrap i {
+        margin-left: 3px;
+        font-size: 14px;
+        font-weight: bold; }
+      .tour-info .promo .current-price .wrap .price {
+        margin-right: 5px;
+        font-size: 28px;
+        font-weight: bold; }
+      .tour-info .promo .current-price .wrap .counts {
+        display: inline-block;
+        width: 40px;
+        font-style: italic; }
+    .tour-info .promo .current-price:before {
+      content: '';
+      background: url(../img/sprites.png) 0 -110px no-repeat;
+      width: 168px;
+      height: 35px;
+      position: absolute;
+      bottom: 20px;
+      left: -6px; }
+  .tour-info .main-info {
+    position: relative;
+    box-sizing: border-box;
+    float: right;
+    width: 33.2%;
+    min-height: 290px;
+    padding: 15px 20px;
+    background-color: #fafafa;
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.07), rgba(219, 219, 219, 0.07));
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.07), rgba(219, 219, 219, 0.07));
+    border-radius: 3px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(0, 0, 0, 0.03), -5px 0 5px -4px rgba(0, 0, 0, 0.4); }
+    .tour-info .main-info:before {
+      content: '';
+      width: 5px;
+      height: 6px;
+      background-color: #777;
+      background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.32), rgba(255, 255, 255, 0.32));
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.32), rgba(255, 255, 255, 0.32));
+      border-radius: 100% 0 0;
+      position: absolute;
+      top: 0;
+      left: -5px; }
+    .tour-info .main-info .title {
+      margin-bottom: 10px;
+      font-size: 36px; }
+    .tour-info .main-info .description {
+      padding-bottom: 15px;
+      font-size: 13px;
+      line-height: 15px;
+      color: #b0b0b0;
+      border-bottom: 1px solid #e0e0e0; }
+    .tour-info .main-info .price-variants {
+      border-top: 1px solid #f3f3f3;
+      width: 100%; }
+      .tour-info .main-info .price-variants .heading {
+        padding: 10px 0 5px 0;
+        font-size: 13px;
+        color: #b0b0b0;
+        text-align: left;
+        text-shadow: 0 1px rgba(255, 255, 255, 0.5); }
+      .tour-info .main-info .price-variants .location {
+        padding-bottom: 5px;
+        font-size: 18px; }
+      .tour-info .main-info .price-variants .price {
+        font-size: 20px;
+        font-weight: bold; }
+        .tour-info .main-info .price-variants .price span {
+          font-size: 14px;
+          font-weight: normal; }
+          .tour-info .main-info .price-variants .price span i {
+            font-weight: bold; }
+
+.filters {
+  position: relative;
+  margin-top: 8px;
+  min-height: 77px;
+  background-color: #fafafa;
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.07), rgba(219, 219, 219, 0.07));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.07), rgba(219, 219, 219, 0.07));
+  border-radius: 3px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(0, 0, 0, 0.03); }
+  .filters:after {
+    content: '';
+    display: block;
+    clear: both; }
+  .filters .col {
+    position: relative;
+    margin-right: 20px;
+    float: left;
+    text-align: center; }
+    .filters .col .heading {
+      padding: 22px 40px 23px 15px;
+      background: url(../img/sprites.png) 0 -31px no-repeat;
+      font-size: 16px;
+      color: #fff; }
+    .filters .col label {
+      display: inline-block;
+      margin-top: 13px;
+      font-size: 12px;
+      color: #b0b0b0; }
+    .filters .col select {
+      margin-top: 10px;
+      padding: 6px 10px;
+      background-color: #fafafa;
+      background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.09), rgba(255, 255, 255, 0.09));
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.09), rgba(255, 255, 255, 0.09));
+      border-radius: 3px;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4), inset 0 1px 1px rgba(0, 0, 0, 0.03), inset 0 0 2px rgba(255, 255, 190, 0.3);
+      border: none;
+      color: #424242; }
+    .filters .col #entry-date {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      text-indent: 0.01px;
+      text-overflow: '';
+      -ms-appearance: none;
+      appearance: none !important; }
+    .filters .col input[type="checkbox"] + label {
+      font-size: 14px;
+      color: inherit;
+      vertical-align: top;
+      cursor: pointer; }
+  .filters .btn-filter {
+    position: absolute;
+    bottom: -28px;
+    left: 50%;
+    margin-left: -61px;
+    background: url(../img/sprites.png) 0 0 no-repeat;
+    width: 123px;
+    height: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff; }
+    .filters .btn-filter:hover {
+      background: url(../img/sprites.png) -125px 0 no-repeat; }
+
+.hotels-info {
+  margin-top: 45px;
+  overflow: hidden; }
+  .hotels-info:before, .hotels-info:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #fafafa;
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.07), rgba(219, 219, 219, 0.07));
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.07), rgba(219, 219, 219, 0.07));
+    box-shadow: 0 1px rgba(0, 0, 0, 0.12), inset 0 1px 1px rgba(0, 0, 0, 0.02); }
+  .hotels-info .hotels-list {
+    margin: 20px 0 10px;
+    width: 100%; }
+    .hotels-info .hotels-list tr {
+      position: relative;
+      display: block;
+      margin-bottom: 10px;
+      min-height: 40px;
+      line-height: 40px;
+      background-color: #fafafa;
+      background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.07), rgba(219, 219, 219, 0.07));
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.07), rgba(219, 219, 219, 0.07));
+      border-radius: 3px;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(0, 0, 0, 0.03); }
+      .hotels-info .hotels-list tr td {
+        float: left; }
+        .hotels-info .hotels-list tr td .index {
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: url(../img/sprites.png) -150px -31px no-repeat;
+          width: 52px;
+          height: 24px;
+          line-height: 24px;
+          font-size: 14px;
+          font-weight: bold;
+          color: #fff;
+          text-shadow: 0 -1px rgba(0, 0, 0, 0.25);
+          text-align: center; }
+        .hotels-info .hotels-list tr td .price {
+          position: absolute;
+          top: 0;
+          right: 0;
+          background: url(../img/sprites.png) -203px -31px no-repeat;
+          width: 174px;
+          height: 41px; }
+        .hotels-info .hotels-list tr td:nth-child(1) {
+          margin-left: 60px;
+          width: 30%;
+          border-right: 1px solid #fcfcfc;
+          font-size: 18px;
+          color: #010101; }
+          .hotels-info .hotels-list tr td:nth-child(1) i {
+            color: #ec3a1a; }
+          .hotels-info .hotels-list tr td:nth-child(1) .location-to {
+            font-size: 12px;
+            color: #b0b0b0; }
+        .hotels-info .hotels-list tr td:nth-child(2), .hotels-info .hotels-list tr td:nth-child(3) {
+          padding-left: 20px;
+          width: 22%;
+          border-left: 1px solid #e6e6e6;
+          border-right: 1px solid #fcfcfc; }
+          .hotels-info .hotels-list tr td:nth-child(2) span, .hotels-info .hotels-list tr td:nth-child(3) span {
+            font-size: 12px;
+            color: #b0b0b0; }
+        .hotels-info .hotels-list tr td:nth-child(3) {
+          padding-left: 15px;
+          width: 15%; }
+        .hotels-info .hotels-list tr td:nth-child(4) {
+          padding-left: 15px;
+          border-left: 1px solid #e6e6e6; }
+          .hotels-info .hotels-list tr td:nth-child(4) span {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 0 -1px rgba(0, 0, 0, 0.25); }
+            .hotels-info .hotels-list tr td:nth-child(4) span i {
+              margin-left: 35px;
+              font-size: 14px; }
+          .hotels-info .hotels-list tr td:nth-child(4) a {
+            position: absolute;
+            top: 0;
+            right: -16px;
+            padding-left: 16px;
+            background: url(../img/sprites.png) -250px 0 no-repeat;
+            width: 82px;
+            height: 24px;
+            line-height: 24px;
+            font-size: 12px;
+            font-weight: bold;
+            color: #fefefe;
+            text-shadow: 0 -1px rgba(0, 0, 0, 0.25); }
+            .hotels-info .hotels-list tr td:nth-child(4) a:hover {
+              background: url(../img/sprites.png) -333px 0 no-repeat; }
+
+.main-footer {
+  position: relative;
+  margin: 40px 0 10px 0;
+  min-height: 38px;
+  background-color: #525252;
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.07), rgba(219, 219, 219, 0.07));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.07), rgba(219, 219, 219, 0.07));
+  border-radius: 3px;
+  box-shadow: 0 1px rgba(0, 0, 0, 0.75), inset 0 1px 1px rgba(0, 0, 0, 0.02);
+  font-size: 12px;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.24);
+  vertical-align: middle; }
+  .main-footer span {
+    padding: 0 10px;
+    line-height: 38px;
+    color: #a5a5a5; }
+    .main-footer span a {
+      color: #fafafa; }
+  .main-footer .copyright {
+    border-right: 2px solid #848484; }
+  .main-footer .dev {
+    border-left: 2px solid #848484; }
+    .main-footer .dev a {
+      color: #eb392d;
+      font-style: italic;
+      text-decoration: underline; }
