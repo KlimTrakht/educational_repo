@@ -1,0 +1,4 @@
+.env
+*.php
+!index.php
+log/
